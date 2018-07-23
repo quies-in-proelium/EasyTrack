@@ -16,7 +16,7 @@ _side = side player;
         _iconPos = ICON_POS(_icon);
         _iconSize = ICON_SIZE_X(_icon);
         _iconScreenPos = _mapControl ctrlMapWorldToScreen _iconPos;
-        _iconSizeFactor = 1;
+        _iconSizeFactor = 0.8;
 
         // manipulate the icon color
         _timeFade = 0.3 * (((TIME_VALUE - (MARKER_GET_TIME(_x))) / 1800) min 1);

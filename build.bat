@@ -21,5 +21,5 @@ set prefix=
 :: DON'T TOUCH ME ::
 cd %source%
 if not exist "%destination%" mkdir "%destination%"
-for /d %%G in ("%prefix%*") do "%builder%" "%source%\%%G" "%destination%" -toolsDirectory="%toolsdir%" -sign="%Signkey%" -packonly -clear
+for /d %%G in ("%prefix%*") do "%builder%" "%source%\%%G" "%destination%" -prefix="x\cl\addons\%%G" -toolsDirectory="%toolsdir%" -sign="%Signkey%" -packonly -clear
 pause

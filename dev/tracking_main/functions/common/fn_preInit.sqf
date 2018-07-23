@@ -2,7 +2,6 @@
 
 GVAR(components) = [
     "tracking_main",
-    "bft",
     "rft"
 ];
 

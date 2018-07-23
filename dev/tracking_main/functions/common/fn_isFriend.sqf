@@ -6,7 +6,7 @@ private ["_getItemSides", "_playerSides", "_targetSides", "_result"];
 
 _getItemSides = {
     PARAMS_1(_unit);
-    _side = site _unit;
+    _side = side _unit;
 
     _side;
 };

@@ -4,9 +4,6 @@ class CfgFunctions {
             file = FUNCFILE(actions);
 
             class addAction {};
-            class btn_toggleActions {};
-            class initMap {};
-            class lst_execAction {};
             class removeAction {};
         };
 
@@ -15,8 +12,8 @@ class CfgFunctions {
 
             class colorArrayToString {};
             class colorStringToArray {};
-            class getSideFromItem {};
             class isFriend {};
+            class hasTracker{};
             class preInit { preInit = 1; };
             class postInit { postInit = 1; };
         };

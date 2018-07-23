@@ -18,9 +18,9 @@
 				<German>Favoriten</German>
 			</Key>
 			<Key ID="STR_RFT_FAVINFO1">
-				<Original>CTRL + Left Click to select for</Original>
-				<English>CTRL + Left Click to select for</English>
-				<German>STRG + Linksklick, um zu bearbei-</German>
+				<Original>ALT + Left Click to select for</Original>
+				<English>ALT + Left Click to select for</English>
+				<German>ALT + Linksklick, um zu bearbei-</German>
 			</Key>
 			<Key ID="STR_RFT_FAVINFO2">
 				<Original>editing</Original>

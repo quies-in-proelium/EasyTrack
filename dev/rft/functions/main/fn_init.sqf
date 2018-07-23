@@ -85,6 +85,8 @@ GVAR(favorites) = [
     [QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]],
     [QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]],
     [QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]],
+	[QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]],
+	[QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]],
     [QMAINDATAPATH(symbols\unknown.paa), SIZE_UNIT, [COLOR_GREY]]
 ];
 

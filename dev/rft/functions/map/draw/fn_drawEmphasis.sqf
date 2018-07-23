@@ -8,7 +8,7 @@ private ["_selectedIcon", "_selectedIconPos", "_emphasisIcon", "_factor"];
 _selectedIcon = MARKER_GET_ICON(_selectedMarker);
 _selectedIconPos = ICON_POS(_selectedIcon);
 
-_factor = 1.2;
+_factor = 1;
 if(!isNil QGVAR(hoveredMarker)) then {
     if(MARKER_GET_ID(GVAR(hoveredMarker)) == MARKER_GET_ID(_selectedMarker)) then {
         _factor = 1.2 * 1.2;

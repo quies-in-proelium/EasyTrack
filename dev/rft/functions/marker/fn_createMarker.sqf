@@ -7,7 +7,7 @@ _mousePos = _mapControl ctrlMapScreenToWorld GVAR(mousePos);
 if(typeName _source == typeName "") then {
     _icon = ICON_DEFAULT;
     _size = ICON_SIZE_DEFAULT;
-    _side = [player] call MFUNC(getSideFromItem);
+    _side = side player;
 
     SET_ICON_POS(_icon, _mousePos);
     SET_ICON_POS(_size, _mousePos);

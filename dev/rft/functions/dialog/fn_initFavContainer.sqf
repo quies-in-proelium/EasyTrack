@@ -1,12 +1,10 @@
 #include "script_component.hpp"
 
-#define PADDING_X (3 * CONTAINER_BASE_X)
-
 PARAMS_3(_control,_mainYPos,_params);
 
 private ["_favCount", "_mapDisplay", "_background",  "_newXPos", "_newYPos", "_newWidth", "_newHeight", "_height"];
 
-_favCount = 4;
+_favCount = 6;
 _mapDisplay = ctrlParent _control;
 _background = _mapDisplay ctrlCreate [QEGVAR(tracking_main,Background), -1, _control];
 
