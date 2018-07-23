@@ -2,7 +2,8 @@
 *.lnk
 *.bbcode
 *.pbo
-*.biprivatkey
+*.biprivatekey
+*.bisign
 
 texHeaders.bin
 

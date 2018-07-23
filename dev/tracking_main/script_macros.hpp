@@ -17,25 +17,6 @@
 #define SIZE_SQUAD      QUOTE(SIZE_BASE_SYS(2))
 #define SIZE_PLATOON    QUOTE(SIZE_BASE_SYS(3))
 
-#define TABLET_ITEMS_SYS    "b_EasyTrack_Tablet", "o_EasyTrack_Tablet", "i_EasyTrack_Tablet"
-#define PDA_ITEMS_SYS       "b_EasyTrack_PDA", "o_EasyTrack_PDA", "i_EasyTrack_PDA"
-#define TRACKER_ITEMS_SYS   TABLET_ITEMS_SYS, PDA_ITEMS_SYS
-
-#define TABLET_ITEMS    [TABLET_ITEMS_SYS]
-#define PDA_ITEMS       [PDA_ITEMS_SYS]
-#define TRACKER_ITEMS   [TRACKER_ITEMS_SYS]
-
-#define UHAS_ITEMS(var1, var2) (count (var1 arrayIntersect (assignedItems var2) + (items var2)) > 0)
-#define HAS_ITEMS(var1) UHAS_ITEMS(var1, player)
-
-#define HAS_TRACKER     HAS_ITEMS(TRACKER_ITEMS)
-#define HAS_TABLET      HAS_ITEMS(TABLET_ITEMS)
-#define HAS_PDA         HAS_ITEMS(PDA_ITEMS)
-
-#define UHAS_TRACKER(var1)     UHAS_ITEMS(TRACKER_ITEMS, var1)
-#define UHAS_TABLET(var1)      UHAS_ITEMS(TABLET_ITEMS, var1)
-#define UHAS_PDA(var1)         UHAS_ITEMS(PDA_ITEMS, var1)
-
 // Functional macros
 #undef QEGVAR
 #define QEGVAR(var1,var2) QUOTE(EGVAR(var1,var2))

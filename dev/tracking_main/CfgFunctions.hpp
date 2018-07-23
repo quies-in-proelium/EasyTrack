@@ -3,7 +3,6 @@ class CfgFunctions {
         class actions {
             file = FUNCFILE(actions);
 
-            class actionSelfDestruct {};
             class addAction {};
             class btn_toggleActions {};
             class initMap {};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="EasyTrack">
+<Project name="EasyRFTrack">
 	<Package name="RFT">
 		<Container ID="Common">
 			<Key ID="STR_RFT_RFTNAME">

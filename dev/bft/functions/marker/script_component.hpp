@@ -1,1 +1,0 @@
-#include "\x\cl\addons\bft\script_component.hpp"

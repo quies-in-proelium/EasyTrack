@@ -17,7 +17,7 @@ _btnActions ctrlSetPosition [
 ];
 _btnActions ctrlSetText localize "STR_MAIN_MAINNAME";
 _btnActions ctrlAddEventHandler ["ButtonClick", FUNC(btn_toggleActions)];
-_btnActions ctrlShow HAS_TRACKER;
+_btnActions ctrlShow ([] call MFUNC(hasTracker));
 _btnActions ctrlCommit 0;
 
 _grpActions = _mapDisplay ctrlCreate [QGVAR(grpActions), IDC_GRP_ACTIONS];

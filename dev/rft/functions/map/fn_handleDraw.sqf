@@ -7,7 +7,7 @@ PARAMS_1(_mapControl);
 private ["_selectedMarker"];
 _selectedMarker = GVAR(selectedMarker);
 
-if (HAS_TRACKER) then {
+if ([] call MFUNC(hasTracker)) then {
     // Emphasize the selected icon
     [_mapControl, _selectedMarker] call FUNC(drawEmphasis);
 

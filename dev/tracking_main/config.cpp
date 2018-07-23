@@ -2,20 +2,19 @@
 
 class CfgPatches {
     class ADDON {
-        name = "EasyTrack";
+        name = "EasyRFTrack";
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
         author = MAINAUTHOR;
         authors[] = {AUTHORS};
-        url = "http://www.gruppe-w.de/";
+        url = "";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgWeapons.hpp"
 #include "dialog.hpp"
 #include "Extended_Eventhandlers.hpp"

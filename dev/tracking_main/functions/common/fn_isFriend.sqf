@@ -6,13 +6,9 @@ private ["_getItemSides", "_playerSides", "_targetSides", "_result"];
 
 _getItemSides = {
     PARAMS_1(_unit);
-    _itemNames = (TRACKER_ITEMS arrayIntersect ((items _unit) + (assignedItems _unit)));
-    _sides = [];
-    {
-        _sides pushBack ([_x] call FUNC(getSideFromItem));
-    } foreach _itemNames;
+    _side = site _unit;
 
-    _sides;
+    _side;
 };
 
 _playerSides = [player] call _getItemSides;

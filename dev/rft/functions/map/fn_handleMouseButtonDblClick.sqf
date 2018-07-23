@@ -5,7 +5,7 @@ PARAMS_7(_mapControl,_mouseButton,_mouseX,_mouseY,_shiftState,_ctrlState,_altSta
 
 private ["_mapDisplay", "_grpMain", "_pos", "_icon", "_size", "_marker"];
 
-if(!_altState || {_mouseButton != 0} || {!HAS_TRACKER}) exitWith {};
+if(!_altState || {_mouseButton != 0} || {!([] call MFUNC(hasTracker))}) exitWith {};
 
 GVAR(dblClick) = true;
 

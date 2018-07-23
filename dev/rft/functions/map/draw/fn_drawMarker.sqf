@@ -2,23 +2,13 @@
 
 PARAMS_2(_mapControl,_selectedMarker);
 
-private ["_hoveringCount", "_mapDisplay", "_sides"];
+private ["_hoveringCount", "_mapDisplay", "_side"];
 _mapDisplay = ctrlParent _mapControl;
 _hoveringCount = 0;
-_sides = [];
+_side = side player;
 
 {
-    private ["_side"];
-    _side = [_x] call MFUNC(getSideFromItem);
-    if(_x in (items player + assignedItems player) && !(_side in _sides)) then {
-        {
-            _sides pushBack _x;
-        } foreach ([_side] call BIS_fnc_friendlySides);
-    };
-} foreach TRACKER_ITEMS;
-
-{
-    if(MARKER_GET_SIDE(_x) in _sides) then {
+    if(MARKER_GET_SIDE(_x) == _side) then {
         EXPLODE_4_PVT(_x,_icon,_size,_direction,_ellipse);
         private ["_iconColor", "_iconPos", "_iconSize", "_iconSizeFactor", "_iconScreenPos", "_distance", "_timeFade"];
 

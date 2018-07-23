@@ -2,14 +2,14 @@
 
 class CfgPatches {
     class ADDON {
-        name = "EasyTrack - Red Force Tracking";        
+        name = "EasyRFTrack - Red Force Tracking";
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main", QUOTE(DOUBLES(PREFIX,tracking_main))};
         author = MAINAUTHOR;
         authors[] = {AUTHORS};
-        url = "http://www.gruppe-w.de/";
+        url = "";
         VERSION_CONFIG;
     };
 };
