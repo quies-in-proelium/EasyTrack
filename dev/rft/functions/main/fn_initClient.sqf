@@ -12,14 +12,12 @@
         // GPS
         GVAR(pfhGPS) = [
             {
-                _finished = false;
+                private _finished = false;
                 {
-                    if (['311',(str _x),FALSE] call BIS_fnc_inString) then {
-                        if (!isNull (_x displayCtrl 101)) then {
-                            _mapControl = _x displayCtrl 101;
-                            _mapControl ctrlAddEventHandler ["draw", FUNC(handleDraw)];
-                            _finished = true;
-                        };
+                    if (ctrlIDD _x == 311) then {
+                        private _mapControl = _x displayCtrl 101;
+                        _mapControl ctrlAddEventHandler ["draw", FUNC(handleDraw)];
+                        _finished = true;
                     };
                 } forEach (uiNamespace getVariable "IGUI_displays");
                 if(_finished) then {
@@ -27,8 +25,12 @@
                 };
             }
         ] call CBA_fnc_addPerFrameHandler;
+    }
+] call CBA_fnc_waitUntilAndExecute;
 
-        // Tao Folding Map (Tablet Day)
+[
+    {(!isNil QEGVAR(tracking_main,controlTypes)) && (!isNull player) && !(isNull (uiNamespace getVariable "Tao_FoldMap")},
+    {
         GVAR(pfhTaoDAY) = [
             {
                 _taoIDD = uiNamespace getVariable "Tao_FoldMap";
@@ -46,7 +48,6 @@
             }
         ] call CBA_fnc_addPerFrameHandler;
 
-        // Tao Folding Map (Tablet Night)
         GVAR(pfhTaoNight) = [
             {
                 _taoIDD = uiNamespace getVariable "Tao_FoldMap";
